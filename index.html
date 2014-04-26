@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Photo Explorer</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/photos.css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="js/photos.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="js/ExpiringMap.js"></script>
+</head>
+<body>
+	<div id="googlemaps"></div>
+    <div id="coloverlay"></div>
+	<div class="title">
+    	Photo Explorer<br />Search a Location and View Photos!
+        <form style="margin-top:30px;" action="#" id="search-form">
+    	<input id="search" class="search-field" type="search" title="Search for:" name="s" value="" placeholder="Search"></input>
+        </form>
+	</div>   
+    <ul id="notes-ul"></ul>
+  <script>
+  google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+</body>
+</html>
